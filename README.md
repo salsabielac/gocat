@@ -3,15 +3,15 @@
 ### Konfigurasi Project
 Buka DAL -> DBConnection.cs ,koneksi string ganti wekmu 
 
-![alt text](doc/str.png "String Alamaat")
+![](doc/str.PNG "String Alamaat")
 
 Nek server explorer klik database e , klik properties
 
-![alt text](doc/qq.png "Path gambar")
+![alt text](doc/qq.PNG "Path gambar")
 
 Cara nggolek i ne ngeten , koneksine string e gentien karo iki
 
-![alt text](doc/path.png "Path gambar")
+![alt text](doc/path.PNG "Path gambar")
 
 
 ### Author 
