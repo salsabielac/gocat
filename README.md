@@ -1,2 +1,0 @@
-# gocat
-gui
