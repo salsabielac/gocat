@@ -16,5 +16,11 @@ namespace gocat
         {
             InitializeComponent();
         }
+
+        private void agamaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAgama fa = new FormAgama();
+            fa.ShowDialog();
+        }
     }
 }
