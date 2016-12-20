@@ -41,6 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OPAgama.cs" />
+    <Compile Include="OPJenisKelamin.cs" />
+    <Compile Include="OPJenisKesehatan.cs" />
+    <Compile Include="OPJenisKucing.cs" />
+    <Compile Include="OPJenisPelayanan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

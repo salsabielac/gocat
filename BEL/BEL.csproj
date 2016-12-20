@@ -41,6 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Agama.cs" />
+    <Compile Include="JenisKelamin.cs" />
+    <Compile Include="JenisKesehatan.cs" />
+    <Compile Include="JenisKucing.cs" />
+    <Compile Include="JenisPelayanan.cs" />
+    <Compile Include="JenisPerawatan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -59,11 +59,12 @@ namespace gocat
             //Nek kene settingan datagrid e cek iso di klik
             label2.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString(); //Value tekan data grid index 0 di diuncalne nang label1
             textBox1.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString(); //Value tekan data grid index 1 di diuncalne nang txtbox1
+            button1.Enabled = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            agama.Id = Int32.Parse(label1.Text); //Iki gae njumuk ID ne
+            agama.Id = Int32.Parse(label2.Text); //Iki gae njumuk ID ne
             opAgama.deleteAgama(agama);
             loadDataAgama();
         }
@@ -80,6 +81,12 @@ namespace gocat
             agama.Keterangan = textBox1.Text; //Iki sing ate diinputne jal
             opAgama.updateAgama(agama);
             loadDataAgama();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            label2.Text = "";
         }
     }
 }

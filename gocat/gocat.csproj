@@ -52,6 +52,30 @@
     <Compile Include="FormAgama.Designer.cs">
       <DependentUpon>FormAgama.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormJenisKelamin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJenisKelamin.Designer.cs">
+      <DependentUpon>FormJenisKelamin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJenisKesehatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJenisKesehatan.Designer.cs">
+      <DependentUpon>FormJenisKesehatan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJenisKucing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJenisKucing.Designer.cs">
+      <DependentUpon>FormJenisKucing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJenisPelayanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJenisPelayanan.Designer.cs">
+      <DependentUpon>FormJenisPelayanan.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +86,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAgama.resx">
       <DependentUpon>FormAgama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJenisKelamin.resx">
+      <DependentUpon>FormJenisKelamin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJenisKesehatan.resx">
+      <DependentUpon>FormJenisKesehatan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJenisKucing.resx">
+      <DependentUpon>FormJenisKucing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJenisPelayanan.resx">
+      <DependentUpon>FormJenisPelayanan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
