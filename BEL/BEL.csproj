@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Agama.cs" />
+    <Compile Include="Harga.cs" />
     <Compile Include="JenisKelamin.cs" />
     <Compile Include="JenisKesehatan.cs" />
     <Compile Include="JenisKucing.cs" />

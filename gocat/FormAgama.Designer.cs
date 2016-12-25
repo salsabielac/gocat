@@ -179,7 +179,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormAgama";
-            this.Text = "FormAgama";
+            this.Text = "  ";
             this.Load += new System.EventHandler(this.FormAgama_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);

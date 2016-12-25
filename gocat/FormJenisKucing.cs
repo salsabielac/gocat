@@ -58,11 +58,12 @@ namespace gocat
         {
             label2.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             textBox1.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            button1.Enabled = false;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            jeniskucing.Id = Int32.Parse(label1.Text);
+            jeniskucing.Id = Int32.Parse(label2.Text);
             opJenisKucing.deleteJenisKucing(jeniskucing);
             loadDataJenisKucing();
         }
@@ -78,6 +79,12 @@ namespace gocat
             jeniskucing.Keterangan = textBox1.Text;
             opJenisKucing.updateJenisKucing(jeniskucing);
             loadDataJenisKucing();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            label2.Text = "";
         }
     }
 }

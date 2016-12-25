@@ -52,6 +52,12 @@
     <Compile Include="FormAgama.Designer.cs">
       <DependentUpon>FormAgama.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormHarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHarga.Designer.cs">
+      <DependentUpon>FormHarga.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormJenisKelamin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAgama.resx">
       <DependentUpon>FormAgama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHarga.resx">
+      <DependentUpon>FormHarga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormJenisKelamin.resx">
       <DependentUpon>FormJenisKelamin.cs</DependentUpon>

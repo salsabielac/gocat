@@ -64,7 +64,7 @@ namespace gocat
 
         private void button3_Click(object sender, EventArgs e)
         {
-            agama.Id = Int32.Parse(label2.Text); //Iki gae njumuk ID ne
+            agama.Id = Int32.Parse(label1.Text); //Iki gae njumuk ID ne
             opAgama.deleteAgama(agama);
             loadDataAgama();
         }
