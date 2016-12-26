@@ -40,6 +40,7 @@ namespace gocat
         {
             harga.Keterangan = textBox1.Text;
             harga.Hargaa = Int32.Parse(textBox2.Text);
+            harga.Tanggal = Convert.ToDateTime(label5.Text);
 
             int baris = opHarga.insertHarga(harga);
 
@@ -91,6 +92,11 @@ namespace gocat
             textBox1.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
             button1.Enabled = false;
+        }
+
+        private void FormHarga_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
