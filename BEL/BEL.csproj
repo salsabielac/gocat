@@ -41,13 +41,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Agama.cs" />
+    <Compile Include="gajadi.cs" />
+    <Compile Include="Dokter.cs" />
+    <Compile Include="Driver.cs" />
     <Compile Include="Harga.cs" />
     <Compile Include="JenisKelamin.cs" />
     <Compile Include="JenisKesehatan.cs" />
     <Compile Include="JenisKucing.cs" />
+    <Compile Include="JenisMakanan.cs" />
     <Compile Include="JenisPelayanan.cs" />
     <Compile Include="JenisPerawatan.cs" />
+    <Compile Include="Karyawan.cs" />
+    <Compile Include="Kucing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Akun.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

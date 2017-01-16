@@ -41,11 +41,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OPAgama.cs" />
+    <Compile Include="OPAkun.cs" />
+    <Compile Include="OPDokter.cs" />
+    <Compile Include="OPDriver.cs" />
     <Compile Include="OPHarga.cs" />
     <Compile Include="OPJenisKelamin.cs" />
     <Compile Include="OPJenisKesehatan.cs" />
     <Compile Include="OPJenisKucing.cs" />
+    <Compile Include="OPJenisMakanan.cs" />
     <Compile Include="OPJenisPelayanan.cs" />
+    <Compile Include="OPJenisPerawatan.cs" />
+    <Compile Include="OPKaryawan.cs" />
+    <Compile Include="OPKucing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

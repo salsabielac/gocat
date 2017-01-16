@@ -46,17 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAkun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAkun.Designer.cs">
+      <DependentUpon>FormAkun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClean.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormClean.Designer.cs">
+      <DependentUpon>FormClean.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDokter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDokter.Designer.cs">
+      <DependentUpon>FormDokter.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAgama.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormAgama.Designer.cs">
       <DependentUpon>FormAgama.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDriver.Designer.cs">
+      <DependentUpon>FormDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFood.Designer.cs">
+      <DependentUpon>FormFood.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormHarga.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormHarga.Designer.cs">
       <DependentUpon>FormHarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHealth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHealth.Designer.cs">
+      <DependentUpon>FormHealth.cs</DependentUpon>
     </Compile>
     <Compile Include="FormJenisKelamin.cs">
       <SubType>Form</SubType>
@@ -76,11 +112,35 @@
     <Compile Include="FormJenisKucing.Designer.cs">
       <DependentUpon>FormJenisKucing.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormJenisMakanan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJenisMakanan.Designer.cs">
+      <DependentUpon>FormJenisMakanan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormJenisPelayanan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormJenisPelayanan.Designer.cs">
       <DependentUpon>FormJenisPelayanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJenisPerawatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJenisPerawatan.Designer.cs">
+      <DependentUpon>FormJenisPerawatan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKaryawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKaryawan.Designer.cs">
+      <DependentUpon>FormKaryawan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKucing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKucing.Designer.cs">
+      <DependentUpon>FormKucing.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -90,11 +150,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAkun.resx">
+      <DependentUpon>FormAkun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClean.resx">
+      <DependentUpon>FormClean.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDokter.resx">
+      <DependentUpon>FormDokter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAgama.resx">
       <DependentUpon>FormAgama.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDriver.resx">
+      <DependentUpon>FormDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFood.resx">
+      <DependentUpon>FormFood.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormHarga.resx">
       <DependentUpon>FormHarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHealth.resx">
+      <DependentUpon>FormHealth.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormJenisKelamin.resx">
       <DependentUpon>FormJenisKelamin.cs</DependentUpon>
@@ -105,8 +183,20 @@
     <EmbeddedResource Include="FormJenisKucing.resx">
       <DependentUpon>FormJenisKucing.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormJenisMakanan.resx">
+      <DependentUpon>FormJenisMakanan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormJenisPelayanan.resx">
       <DependentUpon>FormJenisPelayanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJenisPerawatan.resx">
+      <DependentUpon>FormJenisPerawatan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKaryawan.resx">
+      <DependentUpon>FormKaryawan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKucing.resx">
+      <DependentUpon>FormKucing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

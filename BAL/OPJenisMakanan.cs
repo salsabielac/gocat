@@ -10,40 +10,40 @@ using System.Threading.Tasks;
 
 namespace BAL
 {
-    public class OPHarga
+    public class OPJenisMakanan
     {
         public DBConnection db = new DBConnection();
-        public Harga hg = new Harga();
+        public JenisMakanan mk = new JenisMakanan();
 
-        public DataTable viewHarga(Harga hg)
+        public DataTable viewJenisMakanan(JenisMakanan mk)
         {
             SqlCommand view = new SqlCommand();
             view.CommandType = CommandType.Text;
-            view.CommandText = "SELECT * FROM dbo.harga";
+            view.CommandText = "SELECT * FROM dbo.jenismakanan";
             return db.ExeReader(view);
         }
 
-        public int insertHarga(Harga hg)
+        public int insertJenisMakanan(JenisMakanan mk)
         {
             SqlCommand insert = new SqlCommand();
             insert.CommandType = CommandType.Text;
-            insert.CommandText = "INSERT INTO dbo.harga VALUES('" + hg.Keterangan + "','" + hg.Tanggal + "','" + hg.Hargaa + "')";
+            insert.CommandText = "INSERT INTO dbo.jenismakanan VALUES('" + mk.Keterangan + "', '" + mk.Hargas.Id + "')";
             return db.ExeNonQuery(insert);
         }
 
-        public int deleteHarga(Harga hg)
+        public int deleteJenisMakanan(JenisMakanan mk)
         {
             SqlCommand delete = new SqlCommand();
             delete.CommandType = CommandType.Text;
-            delete.CommandText = "DELETE FROM dbo.harga where id_harga = ('" + hg.Id + "')";
+            delete.CommandText = "DELETE FROM dbo.jenismakanan where id_jmakanan = ('" + mk.Id + "')";
             return db.ExeNonQuery(delete);
         }
 
-        public int updateHarga(Harga hg)
+        public int updateJenisMakanan(JenisMakanan mk)
         {
             SqlCommand upd = new SqlCommand();
             upd.CommandType = CommandType.Text;
-            upd.CommandText = "UPDATE dbo.harga SET keterangan='" + hg.Keterangan + "' where id_harga = '" + hg.Id + "'";
+            upd.CommandText = "UPDATE dbo.jenismakanan SET keterangan='" + mk.Keterangan + "', id_harga='" + mk.Hargas.Id + "'  where id_jmakanan = '" + mk.Id + "'";
             return db.ExeNonQuery(upd);
         }
     }

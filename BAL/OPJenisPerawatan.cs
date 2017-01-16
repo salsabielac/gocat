@@ -10,40 +10,40 @@ using System.Threading.Tasks;
 
 namespace BAL
 {
-    public class OPHarga
+    public class OPJenisPerawatan
     {
         public DBConnection db = new DBConnection();
-        public Harga hg = new Harga();
+        public JenisPerawatan pr = new JenisPerawatan();
 
-        public DataTable viewHarga(Harga hg)
+        public DataTable viewJenisPerawatan(JenisPerawatan pr)
         {
             SqlCommand view = new SqlCommand();
             view.CommandType = CommandType.Text;
-            view.CommandText = "SELECT * FROM dbo.harga";
+            view.CommandText = "SELECT * FROM dbo.jenisperawatan";
             return db.ExeReader(view);
         }
 
-        public int insertHarga(Harga hg)
+        public int insertJenisPerawatan(JenisPerawatan pr)
         {
             SqlCommand insert = new SqlCommand();
             insert.CommandType = CommandType.Text;
-            insert.CommandText = "INSERT INTO dbo.harga VALUES('" + hg.Keterangan + "','" + hg.Tanggal + "','" + hg.Hargaa + "')";
+            insert.CommandText = "INSERT INTO dbo.jenisperawatan VALUES('" + pr.Keterangan + "', '" + pr.Hargas.Id + "')";
             return db.ExeNonQuery(insert);
         }
 
-        public int deleteHarga(Harga hg)
+        public int deleteJenisPerawatan(JenisPerawatan pr)
         {
             SqlCommand delete = new SqlCommand();
             delete.CommandType = CommandType.Text;
-            delete.CommandText = "DELETE FROM dbo.harga where id_harga = ('" + hg.Id + "')";
+            delete.CommandText = "DELETE FROM dbo.jenisperawatan where id_jperawatan = ('" + pr.Id + "')";
             return db.ExeNonQuery(delete);
         }
 
-        public int updateHarga(Harga hg)
+        public int updateJenisPerawatan(JenisPerawatan pr)
         {
             SqlCommand upd = new SqlCommand();
             upd.CommandType = CommandType.Text;
-            upd.CommandText = "UPDATE dbo.harga SET keterangan='" + hg.Keterangan + "' where id_harga = '" + hg.Id + "'";
+            upd.CommandText = "UPDATE dbo.jenisperawatan SET keterangan='" + pr.Keterangan + "', id_harga='" + pr.Hargas.Id + "'  where id_jperawatan = '" + pr.Id + "'";
             return db.ExeNonQuery(upd);
         }
     }

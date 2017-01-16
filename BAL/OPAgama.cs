@@ -49,5 +49,13 @@ namespace BAL
             return db.ExeNonQuery(upd);
         }
 
+        public DataTable viewId(Agama aga)
+        {
+            SqlCommand a = new SqlCommand();
+            a.CommandType = CommandType.Text;
+            a.CommandText = "Select * from agama order by id ASC";
+            return db.ExeReader(a);
+        }
+
     }
 }

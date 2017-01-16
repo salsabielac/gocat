@@ -52,5 +52,41 @@ namespace gocat
             FormHarga fhg = new FormHarga();
             fhg.ShowDialog();
         }
+
+        private void driverToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDriver fdr = new FormDriver();
+            fdr.ShowDialog();
+        }
+
+        private void dokterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormDokter fdo = new FormDokter();
+            fdo.ShowDialog();
+        }
+
+        private void karyawanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormKaryawan fkr = new FormKaryawan();
+            fkr.ShowDialog();
+        }
+
+        private void jenisPerawatanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormJenisPerawatan fjp = new FormJenisPerawatan();
+            fjp.ShowDialog();
+        }
+
+        private void pelangganToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAkun fak = new FormAkun();
+            fak.ShowDialog();
+        }
+
+        private void kucingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormKucing fku = new FormKucing();
+            fku.ShowDialog();
+        }
     }
 }

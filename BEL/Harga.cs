@@ -8,6 +8,19 @@ namespace BEL
 {
     public class Harga
     {
+        public Harga()
+        {
+
+        }
+
+        public Harga(int Id, string Keterangan)
+        {
+            this.Id = Id;
+            this.Keterangan = Keterangan;
+            this.Tanggal = Tanggal;
+            this.Hargaa = Hargaa;
+        }
+
         private int _id;
 
         public int Id

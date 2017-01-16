@@ -35,6 +35,8 @@
             this.jenisKesehatanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jenisKucingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jenisPelayananToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hargaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jenisPerawatanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.akunToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pelangganToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kucingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +49,6 @@
             this.goCatFoodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pembayaranToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hargaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,8 @@
             this.jenisKesehatanToolStripMenuItem,
             this.jenisKucingToolStripMenuItem,
             this.jenisPelayananToolStripMenuItem,
-            this.hargaToolStripMenuItem});
+            this.hargaToolStripMenuItem,
+            this.jenisPerawatanToolStripMenuItem});
             this.masterToolStripMenuItem.Name = "masterToolStripMenuItem";
             this.masterToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.masterToolStripMenuItem.Text = "Master";
@@ -80,37 +82,51 @@
             // agamaToolStripMenuItem
             // 
             this.agamaToolStripMenuItem.Name = "agamaToolStripMenuItem";
-            this.agamaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.agamaToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.agamaToolStripMenuItem.Text = "Agama";
             this.agamaToolStripMenuItem.Click += new System.EventHandler(this.agamaToolStripMenuItem_Click);
             // 
             // jenisKelaminToolStripMenuItem
             // 
             this.jenisKelaminToolStripMenuItem.Name = "jenisKelaminToolStripMenuItem";
-            this.jenisKelaminToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.jenisKelaminToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.jenisKelaminToolStripMenuItem.Text = "Jenis Kelamin";
             this.jenisKelaminToolStripMenuItem.Click += new System.EventHandler(this.jenisKelaminToolStripMenuItem_Click);
             // 
             // jenisKesehatanToolStripMenuItem
             // 
             this.jenisKesehatanToolStripMenuItem.Name = "jenisKesehatanToolStripMenuItem";
-            this.jenisKesehatanToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.jenisKesehatanToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.jenisKesehatanToolStripMenuItem.Text = "Jenis Kesehatan";
             this.jenisKesehatanToolStripMenuItem.Click += new System.EventHandler(this.jenisKesehatanToolStripMenuItem_Click);
             // 
             // jenisKucingToolStripMenuItem
             // 
             this.jenisKucingToolStripMenuItem.Name = "jenisKucingToolStripMenuItem";
-            this.jenisKucingToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.jenisKucingToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.jenisKucingToolStripMenuItem.Text = "Jenis Kucing";
             this.jenisKucingToolStripMenuItem.Click += new System.EventHandler(this.jenisKucingToolStripMenuItem_Click);
             // 
             // jenisPelayananToolStripMenuItem
             // 
             this.jenisPelayananToolStripMenuItem.Name = "jenisPelayananToolStripMenuItem";
-            this.jenisPelayananToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.jenisPelayananToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.jenisPelayananToolStripMenuItem.Text = "Jenis Pelayanan";
             this.jenisPelayananToolStripMenuItem.Click += new System.EventHandler(this.jenisPelayananToolStripMenuItem_Click);
+            // 
+            // hargaToolStripMenuItem
+            // 
+            this.hargaToolStripMenuItem.Name = "hargaToolStripMenuItem";
+            this.hargaToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.hargaToolStripMenuItem.Text = "Harga";
+            this.hargaToolStripMenuItem.Click += new System.EventHandler(this.hargaToolStripMenuItem_Click);
+            // 
+            // jenisPerawatanToolStripMenuItem
+            // 
+            this.jenisPerawatanToolStripMenuItem.Name = "jenisPerawatanToolStripMenuItem";
+            this.jenisPerawatanToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.jenisPerawatanToolStripMenuItem.Text = "Jenis Perawatan";
+            this.jenisPerawatanToolStripMenuItem.Click += new System.EventHandler(this.jenisPerawatanToolStripMenuItem_Click);
             // 
             // akunToolStripMenuItem
             // 
@@ -129,30 +145,35 @@
             this.pelangganToolStripMenuItem.Name = "pelangganToolStripMenuItem";
             this.pelangganToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.pelangganToolStripMenuItem.Text = "Pelanggan";
+            this.pelangganToolStripMenuItem.Click += new System.EventHandler(this.pelangganToolStripMenuItem_Click);
             // 
             // kucingToolStripMenuItem
             // 
             this.kucingToolStripMenuItem.Name = "kucingToolStripMenuItem";
             this.kucingToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.kucingToolStripMenuItem.Text = "Kucing";
+            this.kucingToolStripMenuItem.Click += new System.EventHandler(this.kucingToolStripMenuItem_Click);
             // 
             // dokterToolStripMenuItem
             // 
             this.dokterToolStripMenuItem.Name = "dokterToolStripMenuItem";
             this.dokterToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.dokterToolStripMenuItem.Text = "Dokter";
+            this.dokterToolStripMenuItem.Click += new System.EventHandler(this.dokterToolStripMenuItem_Click);
             // 
             // driverToolStripMenuItem
             // 
             this.driverToolStripMenuItem.Name = "driverToolStripMenuItem";
             this.driverToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.driverToolStripMenuItem.Text = "Driver";
+            this.driverToolStripMenuItem.Click += new System.EventHandler(this.driverToolStripMenuItem_Click);
             // 
             // karyawanToolStripMenuItem
             // 
             this.karyawanToolStripMenuItem.Name = "karyawanToolStripMenuItem";
             this.karyawanToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.karyawanToolStripMenuItem.Text = "Karyawan";
+            this.karyawanToolStripMenuItem.Click += new System.EventHandler(this.karyawanToolStripMenuItem_Click);
             // 
             // perawatanToolStripMenuItem
             // 
@@ -196,13 +217,6 @@
             this.checkoutToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.checkoutToolStripMenuItem.Text = "Checkout";
             // 
-            // hargaToolStripMenuItem
-            // 
-            this.hargaToolStripMenuItem.Name = "hargaToolStripMenuItem";
-            this.hargaToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.hargaToolStripMenuItem.Text = "Harga";
-            this.hargaToolStripMenuItem.Click += new System.EventHandler(this.hargaToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,7 +225,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
-            this.Text = "Cabe";
+            this.Text = "Grooming-Go";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -241,6 +255,7 @@
         private System.Windows.Forms.ToolStripMenuItem pembayaranToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hargaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jenisPerawatanToolStripMenuItem;
     }
 }
 

@@ -24,6 +24,13 @@ namespace BEL
             set { _keterangan = value; }
         }
 
+        private Harga _harga;
+
+        public Harga Hargas
+        {
+            get { return _harga; }
+            set { _harga = value; }
+        }
 
     }
 }

@@ -10,7 +10,7 @@ namespace DataAccessLogic
 {
     public class DBConnection
     {
-        public SqlConnection koneksi = new SqlConnection("Data Source=DOUBLE-PC;Initial Catalog=cat;Integrated Security=True");
+        public SqlConnection koneksi = new SqlConnection("Data Source=DESKTOP-A5PGJ5C;Initial Catalog=cat;Integrated Security=True");
 
         public SqlConnection getCon()
         {

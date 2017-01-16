@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace BEL
 {
-    public class JenisKelamin
+    public class JenisMakanan
     {
-
-        public JenisKelamin() { }
-
         private int _id;
 
         public int Id
@@ -20,19 +17,19 @@ namespace BEL
         }
 
         private string _keterangan;
-        private int idJenisKelamin;
-        private string ketJenisKelamin;
-
-        public JenisKelamin(int Id, string Keterangan)
-        {
-            this.Id = Id;
-            this.Keterangan = Keterangan;
-        }
 
         public string Keterangan
         {
             get { return _keterangan; }
             set { _keterangan = value; }
+        }
+
+        private Harga _harga;
+
+        public Harga Hargas
+        {
+            get { return _harga; }
+            set { _harga = value; }
         }
 
     }

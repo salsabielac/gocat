@@ -8,6 +8,17 @@ namespace BEL
 {
     public class JenisKucing
     {
+        public JenisKucing()
+        {
+
+        }
+
+        public JenisKucing(int Id, string Keterangan)
+        {
+            this.Id = Id;
+            this.Keterangan = Keterangan;
+        }
+
         private int _id;
 
         public int Id
