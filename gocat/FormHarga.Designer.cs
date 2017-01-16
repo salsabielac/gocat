@@ -215,6 +215,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormHarga";
             this.Text = "FormHarga";
+            this.Load += new System.EventHandler(this.FormHarga_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);

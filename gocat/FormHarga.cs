@@ -41,6 +41,10 @@ namespace gocat
             harga.Keterangan = textBox1.Text;
             harga.Hargaa = Int32.Parse(textBox2.Text);
             harga.Tanggal = Convert.ToDateTime(label5.Text);
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
             int baris = opHarga.insertHarga(harga);
 
             if (baris > 0)
@@ -97,6 +101,7 @@ namespace gocat
         {
 
         }
+<<<<<<< HEAD
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -104,5 +109,7 @@ namespace gocat
             opHarga.deleteHarga(harga);
             loadDataHarga();
         }
+=======
+>>>>>>> origin/master
     }
 }

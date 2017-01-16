@@ -27,7 +27,11 @@ namespace BAL
         {
             SqlCommand insert = new SqlCommand();
             insert.CommandType = CommandType.Text;
+<<<<<<< HEAD
             insert.CommandText = "INSERT INTO dbo.harga VALUES('" + hg.Keterangan + "','" + hg.Tanggal + "','" + hg.Hargaa + "')";
+=======
+            insert.CommandText = "INSERT INTO dbo.harga VALUES('" + hg.Keterangan + "','"+hg.Tanggal+"','"+hg.Hargaa+"')";
+>>>>>>> origin/master
             return db.ExeNonQuery(insert);
         }
 
