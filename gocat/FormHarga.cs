@@ -41,10 +41,6 @@ namespace gocat
             harga.Keterangan = textBox1.Text;
             harga.Hargaa = Int32.Parse(textBox2.Text);
             harga.Tanggal = Convert.ToDateTime(label5.Text);
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
             int baris = opHarga.insertHarga(harga);
 
             if (baris > 0)
@@ -93,7 +89,7 @@ namespace gocat
         {
             label2.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             textBox1.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+            textBox2.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
             button1.Enabled = false;
         }
 
@@ -101,7 +97,6 @@ namespace gocat
         {
 
         }
-<<<<<<< HEAD
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -109,7 +104,5 @@ namespace gocat
             opHarga.deleteHarga(harga);
             loadDataHarga();
         }
-=======
->>>>>>> origin/master
     }
 }

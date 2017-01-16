@@ -27,11 +27,8 @@ namespace BAL
         {
             SqlCommand insert = new SqlCommand();
             insert.CommandType = CommandType.Text;
-<<<<<<< HEAD
             insert.CommandText = "INSERT INTO dbo.harga VALUES('" + hg.Keterangan + "','" + hg.Tanggal + "','" + hg.Hargaa + "')";
-=======
-            insert.CommandText = "INSERT INTO dbo.harga VALUES('" + hg.Keterangan + "','"+hg.Tanggal+"','"+hg.Hargaa+"')";
->>>>>>> origin/master
+            //insert.CommandText = "INSERT INTO dbo.harga VALUES('" + hg.Keterangan + "','"+hg.Tanggal+"','"+hg.Hargaa+"')";
             return db.ExeNonQuery(insert);
         }
 
@@ -47,7 +44,7 @@ namespace BAL
         {
             SqlCommand upd = new SqlCommand();
             upd.CommandType = CommandType.Text;
-            upd.CommandText = "UPDATE dbo.harga SET keterangan='" + hg.Keterangan + "' where id_harga = '" + hg.Id + "'";
+            upd.CommandText = "UPDATE dbo.harga SET keterangan='" + hg.Keterangan + "', harga='" + hg.Hargaa + "' where id_harga = '" + hg.Id + "'";
             return db.ExeNonQuery(upd);
         }
     }
